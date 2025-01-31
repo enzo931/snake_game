@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 3px solid rgb(6, 75, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#scoreboard {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008000;
+}
+
+#info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+}
+
+.game-over.show {
+    opacity: 1;
+}
+
+.game-over button {
+    margin-top: 20px; /* Espaçamento entre o texto e o botão */
+    padding: 15px 30px;
+    background-color: #008000; /* Cor de fundo do botão */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-over button:hover {
+    background-color: #5eff00; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+
+
+
